@@ -1,0 +1,37 @@
+spring:
+  main:
+    web-application-type: none
+
+logging:
+  level:
+    root: INFO
+    ru.fk.ekb2.poster: DEBUG
+
+poster:
+  folders:
+    infiles: infiles
+    processed: processed
+  serviceId: xslx-upldr-1
+  file-mapping:
+    sess-datetime-format: yyyyMMdd-HH:mm
+    sale-datetime-format: yyyyMMdd-HH:mm:ss
+
+    first-row: 4
+    first-cell: 2
+    cells-total: 11
+    columns-mapping:
+      org-id: 1
+      sess-datetime: 2
+      pu-num: 3
+      sess-title: 4
+      show-room: 5
+      show-format: 6
+      section: 7
+      row: 8
+      place: 9
+      price: 10
+      discount: 11
+      sale-datetime: 12
+      ticket-type: 13
+
+
